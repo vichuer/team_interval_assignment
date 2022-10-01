@@ -16,7 +16,18 @@ class HomeView extends GetView<HomeController> {
     return Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          title: const Text('Mixers Club'),
+          title: Row(
+            children: [
+              Image.asset(
+                'assets/images/logo.png',
+                height: 30,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Text('Cocktail Hub'),
+            ],
+          ),
           backgroundColor: Colors.black,
         ),
         body: Padding(
